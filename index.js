@@ -4,3 +4,7 @@ const driversWithRevenueOver = (drivers, revenue) => {
     return driver.revenue > revenue;
   });
 };
+
+const driverNamesWithRevenueOver = (drivers, revenue) => {
+  return driversWithRevenueOver(drivers, revenue).map((driver) => {return driver.name});  
+};
