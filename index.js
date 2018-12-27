@@ -20,7 +20,7 @@ const exactMatch = (drivers, kvPair) => {
 const exactMatchToList = (drivers, kvPair) => {
   const matchingDrivers = exactMatch(drivers, kvPair);
   console.log(matchingDrivers);
-  return drivers.map((driver) => {
+  return matchingDrivers.map((driver) => {
     return driver.name;
   });
 };
